@@ -1,5 +1,5 @@
 console.log('Michel')
 console.log('Curso de Javascript')
-let idade = 5;
+let idade = 'Michel';
 console.log(idade);
 
