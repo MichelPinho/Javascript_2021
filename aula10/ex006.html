@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            font: normal 20pt Arial;
+            background-color: rgb(96, 240, 96);
+            color: white;
+            width: 200px; /* largura*/
+            height: 200px; /* altura */
+            line-height: 200px;/* desceu o texto para 200 px, ficando no meio */
+            text-align: center; /* Alinhou o texto no meio do quadrado */
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id = 'area' onclick="clicar()">
+        interaja ...
+
+    </div>
+    <script>
+        function clicar(){
+            var a = document.getElementById('area')
+            a.innerText = "clicou !"
+
+        }
+
+    </script>
+</body>
+</html>
