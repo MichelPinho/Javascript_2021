@@ -21,13 +21,15 @@
     <p>
         Aqui vai o resultado
     </p>
-    <p>Aprendendo a usar o <strong>DOM</strong>no Javascript</p>
-    <div>
-        Clique aqui 
-    </div>
+    <p>Aprendendo a usar o <strong>DOM</strong> no Javascript</p>
+    
+    <div id = 'msg'> Clique aqui </div>
     <script>
+        var p1 = document.getElementsByTagName('p')[1] 
         
-
+        document.write(p1.innerHTML)
+        var d = document.querySelector('div#msg')
+        d.style.background = 'black'
     </script>
 </body>
 </html>
