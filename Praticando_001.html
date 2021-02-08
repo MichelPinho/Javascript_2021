@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polícia Federal</title>
+</head>
+<body>
+    <h1>Sistema de Nacional de Pessoa Física</h1>
+    <p>País de origem : <input type="text" name="txtnac" id="txtnac" /></p>
+    
+    <input type="button" value="Verificar"onclick="consultar()">
+    <div id="nac"></div>
+    <script>
+        function consultar(){
+            var txtnacionalidade = document.querySelector('input#txtnac').value
+            var nac = document.querySelector('div#nac')
+             
+            nac.innerHTML = `<p>Seu país de origem é <strong>${txtnacionalidade}</strong></p>`
+            
+            if (txtnacionalidade == brasil){
+                nac.innerHTML += '<p>Está autorizado a entrada no país, pois você é <strong>Brasileiro</strong>.</p>'
+            }
+                else{
+                    nac.innerHTML += '<p>Você não está autorizado a entrar no país por causa do protocolo da Covid-19, somente os <strong>Brasileiros</strong> possuem autorização.</p>'}
+                       
+            nac.innerHTML += `<p>Obrigado</p>`
+        }
+    </script>    
+</body>
+</html>
