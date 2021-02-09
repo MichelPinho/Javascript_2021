@@ -16,13 +16,13 @@
         function consultar(){
             var txtnacionalidade = document.querySelector('input#txtnac').value
             var nac = document.querySelector('div#nac')
+            var brasil = 0
              
             nac.innerHTML = `<p>Seu país de origem é <strong>${txtnacionalidade}</strong></p>`
-            
+                        
             if (txtnacionalidade == brasil){
                 nac.innerHTML += '<p>Está autorizado a entrada no país, pois você é <strong>Brasileiro</strong>.</p>'
-            }
-                else{
+            }   else{
                     nac.innerHTML += '<p>Você não está autorizado a entrar no país por causa do protocolo da Covid-19, somente os <strong>Brasileiros</strong> possuem autorização.</p>'}
                        
             nac.innerHTML += `<p>Obrigado</p>`
