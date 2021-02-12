@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(117, 117, 246);/* cor de fundo da página */
+    font: normal 15pt Arial;/* fonte , tamanho e tipo */
+  
+}
+header{
+    color: white; /* coloca a fonte branca do texto */
+    text-align: center;/* coloca o texto centralizado */
+}
+section{
+    background-color: white;
+    border-radius: 10px;/* colocando uma borda arredondada */
+    padding: 15px; /* largura do backgroud */
+    width: 500px;/* comprimento do backgroud, assim fica um pouco menos do que o meio da tela */
+    margin: auto;/* centralizar no meio da tela */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.65);/* box-shadow serve para colocar sombra para a caixa de texto.5px deslocamento lateral, 5 px deslocamento vertical, 10 px espalhamento */
+}
+div{
+    text-align: center;
+    padding: 8px;
+}
+footer{
+    color: white; /* coloca a fonte branca */
+    text-align: center; /* centraliza o texto */
+    font-style: italic;/* colocando o estilo itálico no texto*/
+}
