@@ -1,23 +1,14 @@
-function carregar(){
-    var msg = document.getElementById('msg')
-    var img = document.getElementById('imagem')
+function verificar (){
     var data = new Date()
-    var hora =  data.getHours()
-    
-    msg.innerHTML = (`Agora são ${hora} horas.`)
-
-    if (hora >= 0 && hora < 12){
-        /* bom dia */
-        img.src = 'manha.png'
-        document.body.style.background = '#e2cd9f'
-    }   else if (hora >= 12 && hora <= 18){
-        /* boa tarde */
-            img.src = 'tarde.png'
-            document.body.style.background = '#b9846f'
+    var ano = data.getFullYear() /*fullYear -> é o método para daar o ano completo. Ex: 1998. */
+    var fAno = document.getElementById('txtano')
+    var res = document.querySelector('div#res')
+    if (fAno.value.length == 0 || fAno.value > ano) {
+        window.alert('Informação incorreta, refaça a operação !')
     }   else{
-        /* boa noite */
-            img.src = 'noite.png'
-            document.body.style.background = '#515154'
-    }    
-}
+            var fsex = document.getElementsByName('radsex')
+            var idade = ano - Number(fAno.value)
+            
+        }
 
+}

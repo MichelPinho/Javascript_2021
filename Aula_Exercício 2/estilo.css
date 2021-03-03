@@ -1,10 +1,10 @@
 body{
-    background-color: rgb(117, 117, 246);/* cor de fundo da página */
+    background-color: rgb(241, 21, 21);/* cor de fundo da página */
     font: normal 15pt Arial;/* fonte , tamanho e tipo */
   
 }
 header{
-    color: white; /* coloca a fonte branca do texto */
+    color: black; /* coloca a fonte branca do texto */
     text-align: center;/* coloca o texto centralizado */
 }
 section{
@@ -20,7 +20,7 @@ div{
     padding: 8px;
 }
 footer{
-    color: white; /* coloca a fonte branca */
+    color: black; /* coloca a fonte branca */
     text-align: center; /* centraliza o texto */
     font-style: italic;/* colocando o estilo itálico no texto*/
 }
